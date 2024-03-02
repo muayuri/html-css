@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 1.7em;
+            padding: 10px;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .destaque{
+            background-color: red;
+        }
+        .cnome{
+            background-color: aqua;
+        }
+
+        div{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupando Colunas</h1>
+
+    <div>
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Marcio</td>
+                <td>M</td>
+                <td>35</td>
+                <td>Motorista</td>
+            </tr>
+            <tr>
+                <td>Cláduio</td>
+                <td>M</td>
+                <td>21</td>
+                <td>Garçom</td>
+            </tr>
+            <tr>
+                <td>Juliana</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Atendente</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
